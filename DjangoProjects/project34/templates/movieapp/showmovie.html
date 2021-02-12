@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>SHOW MOVIE</title>
+	<link rel="stylesheet" type="text/css" href="{% static "movieapp/css/showmovie.css" %}">
+</head>
+<body>
+
+	<div align="center">
+		<h1> Details of all the Movies</h1>
+		<table border="10">
+
+
+			{% if form_movie %}
+				<tr>
+					<th>NAME</th>
+					<th>RELEASE-DATE</th>
+					<th>HERO</th>
+					<th>HEROINE</th>
+					<th>DIRECTOR</th>
+					<th>BUDGET</th>
+					<th>LANGUAGE</th>
+					<th>RATING</th>
+
+				</tr>
+				{% for movie in form_movie %}
+				<tr>
+					<td>{{ movie.name }}</td>
+					<td>{{ movie.releasedate }}</td>
+					<td>{{ movie.hero }}</td>
+					<td>{{ movie.heroine }}</td>
+					<td>{{ movie.director }}</td>
+					<td>{{ movie.budget }}</td>
+					<td>{{ movie.language }}</td>
+					<td>{{ movie.rating }}</td>
+				</tr>					
+				{% endfor %}
+
+
+
+
+			{% else %}
+			<h1>No Data to Display.</h1>
+				
+			{% endif %}
+			
+			
+		</table>
+	</div>
+
+</body>
+</html>

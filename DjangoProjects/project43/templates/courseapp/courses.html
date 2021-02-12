@@ -1,0 +1,41 @@
+
+{% extends "courseapp/homebase.html" %}
+{% load static %}
+{% block body_home %}
+
+<style type="text/css">
+	.card-deck{
+		margin: 30px;
+	}
+</style>
+<div class="card-deck">
+  <div class="card">
+    <img src="{% static "courseapp/images/py3.jpg" %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Learn Python Programming</h5>
+      <p class="card-text">This Python For Beginners Course Teaches You The Python Language Fast. Includes Python Online Training With Python 3</p>
+      <a href="/python/" class="btn btn-primary">Register</a>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static "courseapp/images/java5.jpg" %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Learn Java Programming</h5>
+      <p class="card-text">Learn Java In This Course And Become a Computer Programmer. Obtain valuable Core Java Skills And Java Certification</p>
+      <a href="/java/" class="btn btn-primary">Register</a>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static "courseapp/images/selenium.jpg" %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Learn Automation with Selenium</h5>
+      <p class="card-text">Selenium WebDriver with Java and python -Basics to Advanced+Frameworks.</p>
+      <a href="/testing/" class="btn btn-primary">Register</a>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+	
+{% endblock body_home %}

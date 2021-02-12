@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>ADD PLAYER</title>
+	<link rel="stylesheet" type="text/css" href="{% static "iplapp/css/addplayer.css" %}">
+</head>
+<body>
+	<div align="center">
+		<form method="POST">
+
+			<h1>Enter the Player Details</h1>
+			{{ form.as_p }}
+			{% csrf_token %}
+
+			<input type="submit" name="">
+			
+		</form>
+	</div>
+
+</body>
+</html>

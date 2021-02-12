@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Defined Filter</title>
+</head>
+<body>
+	<h1>User Defined Filter/Custom Filter using Template Tags</h1>
+
+	{% load customfilter %}
+
+	{% for d in data %}
+	<ol>
+		<li>{{ d.name|title}}</li>
+		<li>{{ d.technology|slicing1 }}</li>
+		<li> {{ d.trainer|slicing2:3 }} </li>
+	</ol>
+	<br><br><hr>	
+	{% endfor %}
+
+</body>
+</html>

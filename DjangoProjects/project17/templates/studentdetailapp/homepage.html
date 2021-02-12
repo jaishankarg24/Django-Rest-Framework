@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>STUDENTAPP</title>
+	<link rel="stylesheet" type="text/css" href="{% static "studentdetailapp/css/homepage.css" %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+	<marquee> Home Page of StudentDetailAppication </marquee>
+	<div class="container" align="center">
+		<div class="jumbotron">
+	  	<h1 class="display-4">Hello, User</h1>
+	 	 <p class="lead">Welcome to Student Info App. </p>
+	 		 <hr class="my-4">
+	  	<p>Click below to view Students Information.</p>
+	  	<a class="btn btn-primary btn-lg" href="/welcome/studentdetails/" role="button">Display Student Info</a>
+		</div>
+	</div>
+
+</body>
+</html>

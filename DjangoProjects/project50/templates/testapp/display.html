@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display CBV</title>
+</head>
+<body>
+	<h1>Displaying all the Information from CBV(ListView) By making customised Template and key</h1>
+	<div class="" align="center">
+	<table border="2">
+		<tr>
+			<th>Title</th>
+			<th>Author</th>
+			<th>Pages</th>
+			<th>Price</th>
+		</tr>
+
+		{% for b in list_of_books  %}
+		<tr>
+			<td> {{ b.title }}</td>
+			<td> {{ b.author }}</td>
+			<td> {{ b.pages }}</td>
+			<td> {{ b.price }}</td>
+
+		</tr>
+		
+	   {% endfor %}
+	</table>
+	</div>
+
+</body>
+</html>

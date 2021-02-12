@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Page</title>
+</head>
+<body>
+	<h1>Enter the Details Below.</h1>
+	<form method="POST">
+
+		{{ form.as_p }}
+		{% csrf_token %}
+		<input type="submit" name="">
+		
+	</form>
+
+</body>
+</html>

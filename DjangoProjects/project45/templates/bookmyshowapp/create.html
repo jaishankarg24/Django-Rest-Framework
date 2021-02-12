@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends "bookmyshowapp/base.html" %}
+{% block base_block %}
+
+<style type="text/css">
+	.divbody{
+		margin: 50px;
+		padding: 30px;
+		background: yellow;
+	}
+	h1{
+		margin-bottom: 10px;
+		background: black;
+		color: white;
+	}
+
+</style>
+
+
+<div class="divbody" align="center">
+<h1>Insert Your Movie</h1>
+	<form method="POST">
+		<table border="2">
+			{{ form.as_p }}
+		</table>
+		{% csrf_token %}
+		<input type="submit" name="" value="Insert Movie">
+		
+	</form>
+	</div>
+
+	
+{% endblock base_block %}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart</title>
+	<style type="text/css">
+	.divbody{
+		margin-bottom: 10px;
+		background: orange;
+		padding: 100px;
+		margin: 30px;
+	}
+</style>
+</head>
+<body>
+		<div class="divbody" align="center">
+		<h1> Your Products </h1>
+		{% if request.COOKIES  %}
+			<table border="5">
+				<tr>
+					<th>NAME</th>
+					<th>QUANTITIES</th>
+				</tr>
+				{% for i,j in request.COOKIES.items %}
+					<tr>
+						<td>{{ i }}</td>
+						<td>{{ j }}</td>
+					</tr>
+					
+				{% endfor %}
+				
+			</table>
+		{% else %}
+		<h1>No Data</h1>
+			
+		{% endif %}
+
+		</div>
+	
+
+</body>
+</html>

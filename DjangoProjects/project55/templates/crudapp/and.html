@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<style type="text/css">
+	
+	.divbody{
+		margin: 30px;
+		padding: 30px;
+		background: yellow;
+	}
+	h1{
+		color: white;
+		background: black;
+		margin: 20px;
+	}
+	table{
+		background-color: white;
+	}
+	th{
+		color:white ;
+		background-color:purple;
+	}
+
+	a{
+		margin-top: 20px;
+	}
+
+</style>
+<body>
+<div class="divbody" align="center">
+	<h1>Employee Information</h1>
+	<table border="2">
+		<tr>
+			<th>Employee Number</th>
+			<th>Employee Name</th>
+			<th>Employee Salary</th>
+			<th>Employee Address</th>
+			<th>Actions</th>
+		</tr>
+		{% for e in emp %}
+			<tr>
+				<td>{{ e.eno }}</td>
+				<td>{{ e.ename }}</td>
+				<td>{{ e.esalary }}</td>
+				<td>{{ e.eaddress }}</td>
+				<td><a href="/update/{{ e.id }}">Update</a>  <a href="/delete/{{ e.id }}">Delete</a></td>
+			</tr>
+			
+		{% endfor %}
+		
+	</table>
+	<a href="/create/" class="btn btn-success btn-lg">Insert New Employee</a>
+</div>
+
+</body>
+</html>

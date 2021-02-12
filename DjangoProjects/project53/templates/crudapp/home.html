@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<style type="text/css">
+	marquee{
+		color: white;
+		background: black;
+		font-size: 50px;
+
+	}
+
+</style>
+<marquee>Home Page of Company Application</marquee>
+{% extends "crudapp/base.html" %}
+
+{% block body_block %}
+<style type="text/css">
+	.jumbotron{
+		background:white; 
+		margin-top: 30px;
+		
+		
+	}
+	body{
+		background:url(https://www.knolskape.com/wp-content/uploads/2018/07/KNOLSKAPE_GAFAM_blog_web_banner.png);
+		background-repeat: no-repeat;
+	}
+	h1,p{
+		color: black;
+	}
+</style>
+<body>
+<div class="body">
+	<div class="jumbotron">
+ 	 <h1 class="display-4">Hello, User!</h1>
+  		<p class="lead">Welcome to Company Application.</p>
+  			<hr class="my-4">
+  		<p>This application helps you perform crud operation on Company Data .</p>
+  		<p class="lead">
+  		  <a class="btn btn-primary btn-lg" href="/display/" role="button">Display Companies</a>&nbsp&nbsp&nbsp&nbsp
+  		  <a class="btn btn-primary btn-lg" href="/create/" role="button">Add Company</a>
+ 		 </p>
+ 		 
+		</div>
+</div>
+</body>
+	
+{% endblock body_block %}

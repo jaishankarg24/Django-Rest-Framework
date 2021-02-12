@@ -1,0 +1,14 @@
+h1, h2{
+	color:red;
+	background:black;
+}
+
+body{
+	background: url(https://image.freepik.com/free-vector/abstract-background-with-lines-blend-form-waves_87426-21.jpg);
+	background-repeat: no-repeat;
+	background-size: 1600px 1000px;
+}
+
+form{
+	color: white;
+}

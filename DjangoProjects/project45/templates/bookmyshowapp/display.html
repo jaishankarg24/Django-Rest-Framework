@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% extends "bookmyshowapp/base.html" %}
+
+
+{% block base_block %}
+<style type="text/css">
+	.divbody{
+		margin: 50px;
+		padding: 30px;
+		background: yellow;
+	}
+	h1{
+		margin-bottom: 10px;
+		background: black;
+		color: white;
+	}
+	#atag{
+		margin-top: 10px;
+	}
+
+	th{
+		background: purple;
+		color: white;
+	}
+	td{
+		background: white;
+
+	}
+
+</style>
+<div class="divbody" align="center">
+	<h1>Movie Information</h1>
+	<table border="2">
+		<tr>
+			<th>Movie Number</th>
+			<th> Hero</th>
+			<th>Heroine</th>
+			<th> Director</th>
+			<th> Release_Date</th>
+			<th> Language</th>
+			<th> Rating </th>
+			<th>Actions</th>
+		</tr>
+		{% for m in movie %}
+			<tr>
+				<td>{{ m.name }}</td>
+				<td>{{ m.hero }}</td>
+				<td>{{ m.heroine }}</td>
+				<td>{{ m.director }}</td>
+				<td>{{ m.release_date }}</td>
+				<td>{{ m.language }}</td>
+				<td>{{ m.rating }}</td>
+
+
+
+				<td><a href="/update/{{ m.id }}">Update</a>  <a href="/delete/{{ m.id }}">Delete</a></td>
+			</tr>
+			
+		{% endfor %}
+		
+	</table>
+	<a href="/create/" class="btn btn-success btn-lg" id="atag">Add New Movie</a>
+</div>
+	
+{% endblock base_block %}

@@ -1,0 +1,21 @@
+body{
+
+	background:url(https://images.financialexpress.com/2019/08/pvr_cinemas_amp.jpg?w=1200&h=800&imflag=true);
+	background-repeat: no-repeat;
+	background-size: 1600px 1000px;
+}
+
+h1{
+	color: white;
+	background :black;
+}
+
+th{
+	color: red;
+	background: black;
+}
+
+td{
+	color: white;
+	background: black;
+}

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+{% extends "templateinheritanceapp/base.html" %}
+
+{% load static %}
+
+{% block body_block %}
+
+		<link rel="stylesheet" type="text/css" href="{% static "templateinheritanceapp/css/base.css" %}">
+		<h1>Displaying Available Events.</h1>
+
+{% endblock body_block %}	

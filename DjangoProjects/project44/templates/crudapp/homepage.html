@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<style type="text/css">
+	marquee{
+		color: white;
+		background: black;
+		font-size: 50px;
+
+	}
+
+</style>
+<marquee>Home Page of Employee Application</marquee>
+{% extends "crudapp/base.html" %}
+
+{% block body_block %}
+<style type="text/css">
+	.jumbotron{
+		background:white; 
+		margin-top: 30px;
+
+	}
+	body{
+		background:orange;
+	}
+	h1,p{
+		color: black;
+	}
+</style>
+<body>
+<div class="body">
+	<div class="jumbotron">
+ 	 <h1 class="display-4">Hello, Employee!</h1>
+  		<p class="lead">Welcome to Employee Application.</p>
+  			<hr class="my-4">
+  		<p>This application helps you perform crud operation on Employee Data .</p>
+  		<p class="lead">
+  		  <a class="btn btn-primary btn-lg" href="/display/" role="button">Display Employee</a>
+ 		 </p>
+		</div>
+</div>
+</body>
+	
+{% endblock body_block %}

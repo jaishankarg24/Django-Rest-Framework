@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display CBV</title>
+</head>
+<body>
+	<h1>Displaying information from CBV</h1>
+			
+
+		{% for b in book_list  %}
+		
+			<h2> <a href="/{{b.id}}"> {{ b.title }} </a> </h2>
+			
+		
+		
+	   {% endfor %}	
+	
+
+</body>
+</html>

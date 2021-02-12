@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display FBV</title>
+</head>
+<body>
+	<h1>Displaying information from FBV</h1>
+	<table border="5">
+		<tr>
+			<th>Title</th>
+			<th>Author</th>
+			<th>Pages</th>
+			<th>Price</th>
+		</tr>
+
+		{% for b in fbook  %}
+		<tr>
+			<td> {{ b.title }}</td>
+			<td> {{ b.author }}</td>
+			<td> {{ b.pages }}</td>
+			<td> {{ b.price }}</td>
+
+		</tr>
+		
+	   {% endfor %}
+	</table>
+	
+
+</body>
+</html>

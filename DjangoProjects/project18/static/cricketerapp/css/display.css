@@ -1,0 +1,29 @@
+th, table{
+	color: black;
+	font-size: 30px;
+
+}
+
+h1{
+	color: red;
+	font-size: 60px;
+	background-color: black;
+}
+
+td{
+	color: white;
+	font-size: 25px;
+}
+
+body{
+
+	background:url(https://www.sportswallah.com/wp-content/uploads/2018/12/o9aphVKsL4-1170x780.jpg);
+	background-repeat: no-repeat;
+	background-size: 1600px 1000px;
+	background-image: blur(20px);
+
+	
+ 
+	
+
+}

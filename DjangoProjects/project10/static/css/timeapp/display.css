@@ -1,0 +1,16 @@
+#id1{
+	color: black;
+	background-color: orange;
+	font-size: 60px;
+}
+
+#id2{
+	color: orange;
+	background-color: black;
+	font-size: 40px;
+}
+
+img{
+	max-width: 1000px;
+	max-height: 1000px;
+}

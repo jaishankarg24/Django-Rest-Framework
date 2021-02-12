@@ -1,0 +1,21 @@
+body{
+
+	background:url(https://static.wixstatic.com/media/192623_cd8b225f9c7b4b6ea06dad50c991f68c~mv2.jpg);
+	background-repeat: no-repeat;
+	background-size: 1300px 600px;
+}
+
+h1{
+	color: white;
+	background :black;
+}
+
+th{
+	color: red;
+	background: black;
+}
+
+td{
+	color: white;
+	background: black;
+}

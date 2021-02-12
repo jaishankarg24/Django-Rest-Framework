@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends "courseapp/homebase.html" %}
+	{% block body_home %}
+	<style type="text/css">
+		.jumbotron{
+			margin:30px;
+			padding: 50px;
+			color: white;
+			background:black;
+		}
+	</style>
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Signup to enjoy the facilities from Study Online</h1>
+			<form method="POST">
+				{{ form.as_p }}
+				{% csrf_token %}
+				<input type="submit" value="Sign up">
+			</form>
+		</div>
+	</div>    
+	{% endblock body_home %}

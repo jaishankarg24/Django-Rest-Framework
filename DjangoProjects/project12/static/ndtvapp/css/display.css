@@ -1,0 +1,20 @@
+marquee{
+	background: blue;
+	font-size: 40px;
+	color: white;
+}
+h2{
+	background: red;
+	color: white;
+}
+
+h1{
+	background: black;
+	color: orange;
+}
+
+ul{
+	color: black;
+	background: orange;
+	font-size: 30px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="{% static "movieapp/css/addmovie.css" %}">
+</head>
+<body>
+	<div align="center">
+
+	<form  method="POST">
+		<h1>Enter the Movie Information.</h1>
+		{{ form.as_p}}
+		{% csrf_token %}
+		<input type="submit" name="">
+		
+	</form>
+
+
+</div>
+
+</body>
+</html>

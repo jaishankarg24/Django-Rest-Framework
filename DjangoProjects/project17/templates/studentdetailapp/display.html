@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>StudentDetails</title>
+	<link rel="stylesheet" type="text/css" href="{% static "studentdetailapp/css/display.css" %}">
+</head>
+<body>
+	<h1>Details of all Students</h1>
+	{% if student_data %}
+		<table border="10">
+			<tr>
+				<th>Name</th>
+				<th>DOB</th>
+				<th>Branch</th>
+				<th>Phone</th>
+				<th>Email</th>
+				<th>Course</th>
+				<th>Address</th>
+
+			</tr>
+			{% for data in student_data  %}
+
+				<tr>
+					<td>{{ data.name }}</td>
+					<td>{{ data.dob }}</td>
+					<td>{{ data.branch }}</td>
+					<td>{{ data.phone }}</td>
+					<td>{{ data.email }}</td>
+					<td>{{ data.course }}</td>
+					<td>{{ data.address }}</td>
+				</tr>
+				
+			{% endfor %}
+
+		</table>
+
+	{% else %}
+		<h1>NO DATA TO DISPLAY.</h1>
+		
+	{% endif %}
+</body>
+</html>

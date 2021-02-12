@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="{% static "modelformapp/css/display.css" %}">
+</head>
+<body>
+	<div class='container' align="center">
+		<form method='POST'>
+
+			<h1> Details of the Student</h1>
+			<h3> Please key in your details </h3>
+
+			{{ form.as_p }}
+			{% csrf_token %}
+
+			<input type="submit" name="">
+			
+		</form>
+	</div>
+</body>
+</html>

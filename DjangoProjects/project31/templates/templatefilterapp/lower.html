@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lower Info</title>
+</head>
+<body>
+	{% for d in data %}
+	<ol start="i">
+		<li>Name: {{d.name|lower}}</li>
+		<li>Age: {{d.age|lower}}</li>
+		<li>Department: {{d.department|lower}}</li>
+		<li>Joined since:{{d.date|timesince}}</li>
+	</ol><br><br><hr>
+		
+	{% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% extends "crudapp/base.html" %}
+{% block body_block %}
+	<h1>Employee Information</h1>
+	<table border="2">
+		<tr>
+			<th>Employee Number</th>
+			<th>Employee Name</th>
+			<th>Employee Salary</th>
+			<th>Employee Address</th>
+			<th>Actions</th>
+		</tr>
+		{% for e in emp %}
+			<tr>
+				<td>{{ e.eno }}</td>
+				<td>{{ e.ename }}</td>
+				<td>{{ e.esalary }}</td>
+				<td>{{ e.eaddress }}</td>
+				<td><a href="/update/{{ e.id }}">Update</a>  <a href="/delete/{{ e.id }}">Delete</a></td>
+			</tr>
+			
+		{% endfor %}
+		
+	</table>
+	<a href="/create/" class="btn btn-success btn-lg">Insert New Employee</a>
+{% endblock body_block %}

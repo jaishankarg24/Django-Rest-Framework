@@ -1,0 +1,15 @@
+marquee {
+	
+	color: blue;
+	background: orange;
+	font-size: 40px;
+}
+
+.container .jumbotron {
+	background-color: green;
+}
+
+h1, p{
+	color: white;
+	font-size: 40px;
+}

@@ -1,0 +1,37 @@
+{% extends "bookmyshowapp/base.html" %}
+{% block base_block %}
+
+<style type="text/css">
+	.divbody{
+		margin: 50px;
+		padding: 30px;
+		background: yellow;
+	}
+	h1{
+		margin-bottom: 10px;
+		background: black;
+		color: white;
+	}
+
+</style>
+
+<div class="divbody" align="center">
+<h1> Update Movie Information </h1>
+
+	<form method="POST">
+
+		{% csrf_token %}
+
+		Movie Name: <input type="text" name="name" value="{{ movie.name }}"><br>
+		Hero : <input type="text" name="hero" value="{{ movie.hero }}"><br>
+		Heroine : <input type="text" name="heroine" value="{{ movie.heroine }}"><br>
+		Director : <input type="text" name="director" value="{{ movie.director }}"><br>
+		Release_Date : <input type="text" name="release_date" value="{{ movie.release_date }}"><br>
+		Language : <input type="text" name="language" value="{{ movie.language }}"><br>
+		Rating : <input type="text" name="rating" value="{{ movie.rating }}"><br>
+
+		<input type="submit" name="" value="Update Movie">
+			
+	</form>
+</div>	
+{% endblock base_block %}

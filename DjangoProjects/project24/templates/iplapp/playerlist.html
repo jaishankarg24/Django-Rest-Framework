@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>PLAYER LIST</title>
+	<link rel="stylesheet" type="text/css" href="{% static "iplapp/css/playerlist.css" %}">
+</head>
+<body>
+	<div align="left">
+		<h1>Details of RCB Team Players</h1>
+		{% if data_table %}
+		<table border="10">
+			<tr>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>COUNTRY</th>
+			</tr>
+			{% for data in data_table %}
+			<tr>
+				<td>{{ data.name }}</td>
+				<td>{{ data.age }}</td>
+				<td>{{ data.country }}</td>
+			</tr>
+				
+			{% endfor %}
+			<tr>
+				
+			</tr>
+			
+		</table>
+		{% else %}
+		<h1>No Data to Show.</h1>	
+		{% endif %}
+		
+	</div>
+
+</body>
+</html>

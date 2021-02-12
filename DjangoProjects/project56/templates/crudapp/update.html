@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<style type="text/css">
+	
+	.divbody{
+		margin: 30px;
+		padding: 30px;
+		background: purple;
+	}
+	h1{
+		color: white;
+		background: black;
+		margin: 20px;
+	}
+	form{
+		color: white;
+	}
+	form{
+		padding: 10px;
+	}
+
+</style>
+<body>
+	<div class="divbody" align="center">
+			<h1>Employee Updation Form</h1>
+
+	<form method="POST">
+
+		{% csrf_token %}
+
+		Employee Number : <input type="text" name="eno" value="{{ employee.eno }}"><br><br>
+		Employee Name : <input type="text" name="ename" value="{{ employee.ename }}"><br><br>
+		Employee Salary : <input type="text" name="esalary" value="{{ employee.esalary }}"><br><br>
+		Employee Address : <input type="text" name="eaddress" value="{{ employee.eaddress }}"><br><br>
+		<input type="submit" name="" value="Update Record">
+			
+	</form>
+
+	</div>
+
+</body>
+</html>

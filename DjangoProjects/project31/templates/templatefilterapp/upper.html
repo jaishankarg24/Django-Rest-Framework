@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upper Info</title>
+</head>
+<body>
+	{% for d in data %}
+	<ol start="1">
+		<li>Name: {{d.name|upper}}</li>
+		<li>Age: {{d.age|upper}}</li>
+		<li>Department: {{d.department|upper}}</li>
+		<li>Date:{{d.date|date:"d-m-yy"}}</li>
+	</ol><br><br><hr>
+		
+	{% endfor %}
+
+</body>
+</html>

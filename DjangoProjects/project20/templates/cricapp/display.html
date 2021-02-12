@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>FORM PAGE</title>
+	<link rel="stylesheet" type="text/css" href="{% static "cricapp/css/display.css" %}">
+</head>
+<body>
+
+	<form method="POST">
+		<h1>Enter the details of a Cricketer.</h1>
+
+		{{ form.as_p}}
+
+		{% csrf_token %}
+
+		<input type="submit" name="">
+
+		
+	</form>
+
+</body>
+</html>

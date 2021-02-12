@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+</head>
+<body>
+	<h1>Enter your name</h1>
+	<form action="/collectcookie/">
+		{{ form }}
+		{% csrf_token %}
+		<input type="submit" name="" value="submit you name">
+	</form>
+
+</body>
+</html>

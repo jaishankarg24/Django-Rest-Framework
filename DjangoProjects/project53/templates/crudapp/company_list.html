@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends "crudapp/base.html" %}
+{% block body_block %}
+
+<style type="text/css">
+	
+	.divbody{
+		margin: 30px;
+		padding: 30px;
+		background: yellow;
+	}
+	h1{
+		color: white;
+		background: black;
+		margin: 20px;
+	}
+
+
+</style>
+<div class="divbody">
+	<h1>List of Companies.</h1>
+	{% for c in company_list %}
+	<h2><a href="/{{c.id}}">{{ c.name }}</a><h2>
+
+		
+	{% endfor %}
+	<a href="/create/" class="btn btn-lg btn-primary">Add new Company</a>
+
+</div>	
+	
+{% endblock body_block %}

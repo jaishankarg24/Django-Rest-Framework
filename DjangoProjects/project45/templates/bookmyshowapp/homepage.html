@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+
+{% extends "bookmyshowapp/base.html" %}
+{% load static %}
+{% block base_block %}
+<head>
+	<title>BookMyShow</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		.carddiv{
+			margin: 30px;
+
+		}
+		.container{
+			margin-top: 10px;
+		}
+		#h{
+			margin-top: 50px;
+			color: white;
+			background: black;
+		}
+	</style>
+</head>
+<body>
+	  <div class="container">
+    <div id="myslideshow" class="carousel slide" data-ride="carousel">
+       <ol class="carousel-indicators">
+          <li data-target="#myslideshow" data-slide-to="0" class="active"></li>
+          <li data-target="#myslideshow" data-slide-to="1"></li>
+          <li data-target="#myslideshow" data-slide-to="2"></li>
+        </ol> 
+      <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static "bookmyshowapp/images/movie3.jpg" %}" class="d-block w-100">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Upcomming movies 2020.</h5>
+        
+              </div>
+            </div>
+
+            <div class="carousel-item">
+               <img src="{% static "bookmyshowapp/images/ipl3.jpg" %}" class="d-block w-100" >
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>Indian Premier League is Back 2020..!!!</h5>
+            
+              </div>
+           </div>
+
+          <div class="carousel-item">
+              <img src="{% static "bookmyshowapp/images/event.jpg" %}" class="d-block w-100">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Upcomming Events 2020</h5>
+              </div>
+          </div>
+      </div>
+        <a class="carousel-control-prev" href="#myslideshow" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+       <a class="carousel-control-next" href="#myslideshow" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+        </a>
+      </div>
+    
+</div>
+<hr>
+<h1 id="h">Trending Movies.!!</h1>
+
+<div class="carddiv">
+	<div class="card-deck">
+  <div class="card">
+    <img src="{% static "bookmyshowapp/images/kgf.jpg" %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">KGF Chapter 2</h5>
+      <p class="card-text">KGF Chapter 2 is an upcoming Indian Kannada-language period action film directed by Prashanth Neel.</p>
+      <a href="/python/" class="btn btn-primary">Read more</a>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static "bookmyshowapp/images/robot.png" %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">2.0</h5>
+      <p class="card-text">2.0 is a 2018 Indian Tamil-language science fiction action film written and directed by S. Shankar.</p>
+      <a href="/java/" class="btn btn-primary">Read more</a>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static "bookmyshowapp/images/uri.jpg" %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Uri</h5>
+      <p class="card-text">Uri: The Surgical Strike is a 2019 Indian Hindi-language military action film. It is directed and written by debutant Aditya Dhar.</p>
+      <a href="/testing/" class="btn btn-primary">Read more</a>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+	
+{% endblock base_block %}
+

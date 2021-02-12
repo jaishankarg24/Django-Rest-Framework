@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Base Page</title>
+	<link rel="stylesheet" type="text/css" href="{% static "templateinheritanceapp/css/base.css" %}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Book My Show</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/homepage/">Home Page <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/moviespage/">Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/eventspage/">Events</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="/sportspage/">Sports</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+{% block body_block %}
+	
+{% endblock body_block %}
+
+
+</body>
+</html>

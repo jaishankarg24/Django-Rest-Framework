@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Name Page</title>
+	<style type="text/css">
+		.divbody{
+			padding: 20px;
+			margin: 50px;
+			background:lightblue;
+		}
+
+		#head{
+			color:red;
+			background:black;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="head">SESSION MANAGEMENT</h1>
+	<div class="divbody" align="center">
+
+	<h1>Enter your Name</h1>
+	<form action="/age/">
+		{{ form.name }}
+		{% csrf_token %}
+		<input type="submit" name="" value="submit name">
+	</form>
+	</div>	
+		
+
+</body>
+</html>

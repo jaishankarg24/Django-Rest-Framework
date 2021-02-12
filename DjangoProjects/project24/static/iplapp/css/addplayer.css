@@ -1,0 +1,14 @@
+h1, h2{
+	color:red;
+	background:black;
+}
+
+body{
+	background: url(https://sportstar.thehindu.com/cricket/ipl/ipl-news/article30836986.ece/ALTERNATES/LANDSCAPE_1200/rcb-2020);
+	background-repeat: no-repeat;
+	background-size:1600px 1200px;
+}
+
+form{
+	color: white;
+}

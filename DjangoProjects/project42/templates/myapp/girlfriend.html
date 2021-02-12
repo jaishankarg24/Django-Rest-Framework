@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Age Page</title>
+	<style type="text/css">
+		.divbody{
+			padding: 20px;
+			margin: 50px;
+			background:orange;
+		}
+
+		#head{
+			color:red;
+			background:black;
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body>
+	<h1 id="head">SESSION MANAGEMENT</h1>
+	<div class="divbody" align="center">
+	<h1>Enter your girlfriend name</h1>
+	<form action="/result/">
+		{{ form.girlfriend }}
+		{% csrf_token %}
+		<input type="submit" name="" value="submit gf">
+	</form>
+		
+	</div>	
+
+</body>
+</html>

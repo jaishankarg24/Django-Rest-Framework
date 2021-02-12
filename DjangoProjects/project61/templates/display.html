@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom Model Manager</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<style type="text/css">
+	.divbody{
+		padding: 10px;
+		margin: 10px;
+		background-color: grey;
+	}
+
+	.btn btn-success btn-lg{
+		margin-top: 10px;
+	}
+	tr{
+		color: black;
+		background-color: white;
+	}
+	th{
+		background-color: purple;
+		font-size: 30px;
+		color: white;
+	}
+</style>
+<body>
+	<div class="divbody" align="center">
+<h1 style="color: white; background-color: black;">Employee Information</h1>
+	<table border="2">
+		<tr>
+			<th>Employee Number</th>
+			<th>Employee Name</th>
+			<th>Employee Salary</th>
+			<th>Employee Address</th>
+			<th>Actions</th>
+		</tr>
+		{% for e in emp %}
+			<tr>
+				<td>{{ e.eno }}</td>
+				<td>{{ e.ename }}</td>
+				<td>{{ e.esalary }}</td>
+				<td>{{ e.eaddress }}</td>
+				<td><a href="/update/{{ e.id }}" class="btn btn-primary btn-lg" role="button">Update</a>  <a href="/delete/{{ e.id }}" class="btn btn-primary btn-lg" role="button">Delete</a></td>
+			</tr>
+			
+		{% endfor %}
+		
+	</table><br>
+	<a href="/create/" class="btn btn-success btn-lg" role="button">Insert New Employee</a>
+</div>
+
+</body>
+</html>
